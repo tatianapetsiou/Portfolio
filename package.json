@@ -1,6 +1,6 @@
 {
   "homepage": "https://tatianapetsiou.github.io/Portfolio",
-  "name": "portfolio",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build && COPY \"CNAME\" \"./build/CNAME\"",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",

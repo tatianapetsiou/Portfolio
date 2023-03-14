@@ -48,6 +48,11 @@ width: 80px;
   background-color: rgb(194, 90, 220);
 }
 
+.verticalMenu {
+  z-index: 999;
+position: sticky;
+}
+
  .nav-pills .nav-link.active.menu-left, .nav-pills .show > .nav-link {
   background-color: #c25adc7a;
 }
@@ -78,17 +83,21 @@ border-bottom: 1px solid hsla(0,0%,100%,.1) !important;
   border-bottom:0 !important;
 }
 
-
+.info {
+  padding-left: 10px;
+}
 .headerTop{
-  position: absolute;
+  position: relative;
   right:0 ;
   top:0 ;
-  padding:30px 50px 0 ;
+  padding:18px 0px 0 ;
   width: 93.48%;
   z-index:4 ;
+  overflow: hidden;
+  margin: auto;
 }
 .info a:nth-child(2){
-  margin-left: 40px;
+  margin-left: 22px;
 }
 .info a{
   text-decoration: none;
@@ -461,7 +470,9 @@ padding: 13px 20px;
         
       }
 
-      
+      .masonry {
+        height: 135vh;
+      }
 
       .main-mas{
        height: 100%;
@@ -497,6 +508,10 @@ padding: 13px 20px;
         border-radius: 100%;
         height: 500px
       
+      }
+
+      .circle img {
+        width: 100%;
       }
 
       .btn-masonry{
@@ -712,6 +727,15 @@ overflow: hidden;
 height: 20vh;
 width: 76%;
 
+  }
+  .info{
+    margin: auto;
+    display: none;
+  }
+
+  .info a {
+    display: block;
+    padding-bottom: 15px;
   }
  }
 
